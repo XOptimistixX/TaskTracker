@@ -4,7 +4,7 @@ android {
         config {
             keyAlias 'appkey'
             keyPassword 'password'
-            storeFile file('D:/Jeff/Documents/appkey.jks')
+            storeFile file('appkey.jks')
             storePassword 'password'
         }
     }

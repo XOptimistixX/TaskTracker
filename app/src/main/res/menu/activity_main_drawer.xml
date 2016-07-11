@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/nav_group_main_items"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/home"
+            android:title="@string/nav_dashboard" />
+    </group>
+
+    <item
+        android:title="@string/nav_tags"
+        android:id="@+id/nav_group_tags">
+        <menu>
+            <group
+                android:id="@+id/tags"
+                android:checkableBehavior="all"/>
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/nav_group_settings"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="@string/nav_settings"/>
+    </group>
+</menu>

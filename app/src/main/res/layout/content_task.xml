@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/item_task_root"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white"
+             android:clickable="true"
+             android:foreground="?android:attr/selectableItemBackground"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior"
+             android:orientation="vertical"
+             android:transitionName="card">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_task_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current affairs portfolio"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/item_task_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_task_schedule"
+                android:transitionName="schedule"
+                android:tint="@color/colorGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/schedule" />
+
+            <TextView
+                android:id="@+id/item_task_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:transitionName="time"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/item_task_schedule"
+                android:text="Term 3 Week 4"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/item_task_tick"
+                android:layout_width="wrap_content"
+                android:transitionName="tick"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="16dp"
+                android:tint="@color/colorPrimary"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/tick" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

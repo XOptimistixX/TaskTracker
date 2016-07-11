@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "519353242789",
+    "firebase_url": "https://assignment-tracker-ab9a6.firebaseio.com",
+    "project_id": "assignment-tracker-ab9a6",
+    "storage_bucket": "assignment-tracker-ab9a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519353242789:android:9f76809a4c74185b",
+        "android_client_info": {
+          "package_name": "com.jeffsieu.tasktracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519353242789-viounhqece5hg3takr8edo5vfdfejio9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jeffsieu.tasktracker",
+            "certificate_hash": "D2363E31A897A52FAC52AF0716C8AD57E2839F01"
+          }
+        },
+        {
+          "client_id": "519353242789-3l4sdelq9t9ng0jopuvov6astpr9i0rv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkpwBehg3oT3d18q6an3fm5q3e4pFGfYM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

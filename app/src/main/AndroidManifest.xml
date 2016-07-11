@@ -38,7 +38,7 @@
             android:theme="@style/AppTheme"/>
         <activity
             android:name=".activity.ChannelActivity"
-            android:label="@string/nav_channel"
+            android:label="@string/nav_channels"
             android:theme="@style/AppTheme"/>
     </application>
 

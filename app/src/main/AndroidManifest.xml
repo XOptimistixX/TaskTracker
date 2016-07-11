@@ -36,6 +36,10 @@
             android:name=".activity.SettingsActivity"
             android:label="@string/nav_settings"
             android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".activity.ChannelActivity"
+            android:label="@string/nav_channel"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

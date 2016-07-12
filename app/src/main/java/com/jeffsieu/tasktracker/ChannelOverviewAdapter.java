@@ -65,7 +65,6 @@ public class ChannelOverviewAdapter extends RecyclerView.Adapter<ChannelOverview
         */
 
 		holder.mNameView.setText(channel.getName());
-		holder.mCodeView.setText(channel.getCode());
 
 		setAnimation(holder.mRootView, position);
 	}

@@ -26,4 +26,8 @@ public class ChannelOverviewFragment extends Fragment {
 	public void updateChannels() {
 		recyclerView.getAdapter().notifyDataSetChanged();
 	}
+
+	public void notifyItemChanged(int position) {
+		recyclerView.getAdapter().notifyItemChanged(position);
+	}
 }

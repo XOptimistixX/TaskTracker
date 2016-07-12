@@ -12,7 +12,7 @@
 #   Decrease Java heap size (-Xmx/-Xms)
 #   Decrease number of Java threads
 #   Decrease Java thread stack sizes (-Xss)
-#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   Set larger key cache with -XX:ReservedCodeCacheSize=
 # This output file may be truncated or incomplete.
 #
 #  Out of Memory Error (memory/allocation.inline.hpp:61), pid=1692, tid=0x00000000000024c4
@@ -29,7 +29,7 @@ Current thread (0x0000000002652800):  JavaThread "Unknown thread" [_thread_in_vm
 Stack: [0x0000000002500000,0x0000000002600000]
 [error occurred during error reporting (printing stack bounds), id 0xc0000005]
 
-Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+Native frames: (J=compiled Java key, j=interpreted, Vv=VM key, C=native key)
 
 
 ---------------  P R O C E S S  ---------------

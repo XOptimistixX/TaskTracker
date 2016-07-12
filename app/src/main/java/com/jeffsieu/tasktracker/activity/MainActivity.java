@@ -168,9 +168,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         }
         tagSubMenu = navigationView.getMenu().findItem(R.id.nav_group_tags).getSubMenu();
-
-        channels.add(new Channel("Testing", "1002i", getUID()));
-        channelKeys.add("iov");
     }
 
     @Override
@@ -258,6 +255,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return dashboardFragment;
     }
 
+    public ChannelOverviewFragment getChannelOverviewFragment() {
+        return channelOverviewFragment;
+    }
+
     public GoogleApiClient getGoogleApiClient() {
         return mGoogleApiClient;
     }
@@ -274,7 +275,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 .setPositiveButton(getString(android.R.string.ok),
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-								MainActivity.channels.add(new Channel(mChannelNameEditText.getText().toString(), "", getUID()));
+								//MainActivity.channels.add(new Channel(mChannelNameEditText.getText().toString(), "", getUID()));
+                                DatabaseUtils.pushChannel(new Channel(mChannelNameEditText.getText().toString()));
 								channelOverviewFragment.updateChannels();
                             }
                         })

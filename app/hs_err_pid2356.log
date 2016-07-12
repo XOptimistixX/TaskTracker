@@ -12,7 +12,7 @@
 #   Decrease Java heap size (-Xmx/-Xms)
 #   Decrease number of Java threads
 #   Decrease Java thread stack sizes (-Xss)
-#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   Set larger key cache with -XX:ReservedCodeCacheSize=
 # This output file may be truncated or incomplete.
 #
 #  Out of Memory Error (allocation.cpp:390), pid=2356, tid=0x0000000000001238
@@ -29,11 +29,11 @@ Current thread (0x0000000014a7d000):  JavaThread "C2 CompilerThread0" daemon [_t
 Stack: [0x00000000160e0000,0x00000000161e0000]
 [error occurred during error reporting (printing stack bounds), id 0xc0000005]
 
-Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+Native frames: (J=compiled Java key, j=interpreted, Vv=VM key, C=native key)
 
 
 Current CompileTask:
-C2:   3008 2058 %     4       com.android.dx.dex.code.LocalList::make @ 16 (102 bytes)
+C2:   3008 2058 %     4       com.android.dx.dex.key.LocalList::make @ 16 (102 bytes)
 
 
 ---------------  P R O C E S S  ---------------
@@ -82,15 +82,15 @@ CodeCache: size=245760Kb used=7897Kb max_used=7897Kb free=237862Kb
 
 Compilation events (10 events):
 Event: 2.914 Thread 0x0000000014a82000 2123       4       com.android.dx.util.ByteArrayAnnotatedOutput::writeByte (51 bytes)
-Event: 2.915 Thread 0x0000000014a82000 nmethod 2123 0x0000000002b5ddd0 code [0x0000000002b5df20, 0x0000000002b5e018]
+Event: 2.915 Thread 0x0000000014a82000 nmethod 2123 0x0000000002b5ddd0 key [0x0000000002b5df20, 0x0000000002b5e018]
 Event: 2.915 Thread 0x00000000162e8800 2124       3       com.android.dx.dex.file.DebugInfoEncoder::convert0 (246 bytes)
-Event: 2.917 Thread 0x00000000162e8800 nmethod 2124 0x0000000002b6bad0 code [0x0000000002b6be80, 0x0000000002b6dcd8]
+Event: 2.917 Thread 0x00000000162e8800 nmethod 2124 0x0000000002b6bad0 key [0x0000000002b6be80, 0x0000000002b6dcd8]
 Event: 2.917 Thread 0x00000000162e8800 2125       3       com.android.dx.dex.file.DebugInfoEncoder$2::compare (13 bytes)
-Event: 2.918 Thread 0x00000000162e8800 nmethod 2125 0x0000000002b5d350 code [0x0000000002b5d4e0, 0x0000000002b5dab0]
+Event: 2.918 Thread 0x00000000162e8800 nmethod 2125 0x0000000002b5d350 key [0x0000000002b5d4e0, 0x0000000002b5dab0]
 Event: 2.918 Thread 0x00000000162e8800 2126       3       com.android.dx.dex.file.DebugInfoEncoder$2::compare (10 bytes)
-Event: 2.918 Thread 0x00000000162e8800 nmethod 2126 0x0000000002b5efd0 code [0x0000000002b5f140, 0x0000000002b5f4d0]
+Event: 2.918 Thread 0x00000000162e8800 nmethod 2126 0x0000000002b5efd0 key [0x0000000002b5f140, 0x0000000002b5f4d0]
 Event: 2.918 Thread 0x00000000162e8800 2127       3       com.android.dx.util.ByteArrayAnnotatedOutput::<init> (54 bytes)
-Event: 2.918 Thread 0x00000000162e8800 nmethod 2127 0x0000000002b5ea50 code [0x0000000002b5ebc0, 0x0000000002b5eec8]
+Event: 2.918 Thread 0x00000000162e8800 nmethod 2127 0x0000000002b5ea50 key [0x0000000002b5ebc0, 0x0000000002b5eec8]
 
 GC Heap History (8 events):
 Event: 1.209 GC heap before
@@ -191,7 +191,7 @@ Event: 2.539 Thread 0x00000000021e2800 Uncommon trap: reason=class_check action=
 Event: 2.631 Thread 0x00000000021e2800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002aa9bfc method=java.util.TreeMap.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; @ 163
 
 Internal exceptions (2 events):
-Event: 0.039 Thread 0x00000000021e2800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000eab07cc0) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u92\6642\hotspot\srýÉ·é7ü£?
+Event: 0.039 Thread 0x00000000021e2800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000eab07cc0) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u92\6642\hotspot\srï¿½É·ï¿½7ï¿½ï¿½?
 Event: 0.039 Thread 0x00000000021e2800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000eab07fa8) thrown at [D:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u92\6642\hotspot\src\share\vm\prims\j
 
 Events (10 events):
